@@ -468,12 +468,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .top-8 {
   top: 2rem;
+}
+
+.right-1 {
+  right: 0.25rem;
 }
 
 .top-12 {
@@ -516,8 +524,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 2.5rem;
 }
 
-.right-1 {
-  right: 0.25rem;
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-\[1px\] {
+  right: 1px;
+}
+
+.left-\[1px\] {
+  left: 1px;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-start-3 {
@@ -604,16 +652,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-full {
@@ -638,6 +686,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-16 {
   height: 4rem;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[95\%\] {
+  height: 95%;
+}
+
+.h-\[98\%\] {
+  height: 98%;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-\[130vw\] {
@@ -672,6 +736,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -680,8 +748,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-\[\#6d0019\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(109 0 25 / var(--tw-border-opacity));
 }
 
 .bg-\[\#78bbcb\] {
@@ -694,30 +804,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-violet-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
+
+.bg-violet-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity));
+}
+
+.bg-violet-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 58 237 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#970635\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 6 53 / var(--tw-bg-opacity));
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-\[\'Cooper_Black\'\2c \'serif\'\] {
-  font-family: 'Cooper Black','serif';
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-5xl {
@@ -725,12 +848,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.font-black {
-  font-weight: 900;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-white {
@@ -749,5 +877,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:justify-center {
     justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 }

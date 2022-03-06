@@ -7,9 +7,22 @@
     <meta name="keywords" content="homer,homero,page,pagina,web,sr. x">
     <meta name="description" content="Tribute page to the Homer's Web Page seen in episode 6x12 of The Simpsons">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cortinas.css"> <!-- Se le da estilo y animacion a las cortinas iniciales -->
     <title>Homer's Web Page</title>
 </head>
-<body class="bg-[#78bbcb] sm:flex sm:justify-center">
+<body class="bg-[#78bbcb] sm:flex sm:justify-center" id="contenedor">
+
+    <div class="flex absolute h-full w-[130vw] z-10 font-serif overflow-x-hidden lg:w-full"> <!-- Animacion de cortinas inicial -->
+        <div class="w-1/2 flex flex-col justify-center items-end" id="corizq"> <!-- Cortina Izquierda -->
+            <p class="relative text-6xl text-white font-black">Hom</p>
+            <p class="relative right-6 text-6xl text-white font-black">Web</p>
+        </div>
+        <div class="w-1/2 flex flex-col justify-center items-start" id="corder"> <!-- Cortina Derecha -->
+            <p class="relative text-6xl text-white font-black">er's</p>
+            <p class="relative text-6xl text-white font-black">Page</p>
+        </div>
+    </div>
+
     <main class="w-[130vw] sm:w-[700px]">
         <div class="w-full flex justify-center"> <!-- Contenedor del titulo -->
             <img src="https://i.imgur.com/qX4pWAP.png" class="relative top-8 right-1"> <!-- Titulo -->
@@ -39,5 +52,8 @@
             <p class="text-5xl font-bold bg-black text-white px-1 m-2">0</p>
         </div>
     </main>
+
+    <script src="main.js"></script> <!-- Se agrega que al hacer click en el sitio se desplacen las cortinas -->
+
 </body>
 </html>

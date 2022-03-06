@@ -1,0 +1,31 @@
+#corizq {
+    animation-name: ;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    background: linear-gradient(to right, #b62a17 0%,#b62a17 6%,#6d0019 10%,#b62a17 14%,#b62a17 20%,#6d0019 24%,#b62a17 28%,#b62a17 34%,#6d0019 38%,#b62a17 42%,#b62a17 48%,#6d0019 52%,#b62a17 56%,#b62a17 62%,#6d0019 66%,#b62a17 70%,#b62a17 76%,#6d0019 80%,#b62a17 84%,#b62a17 90%,#6d0019 94%,#b62a17 98%);
+}
+
+#corder {
+    animation-name: ;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    background: linear-gradient(to right, #b62a17 0%,#b62a17 6%,#6d0019 10%,#b62a17 14%,#b62a17 20%,#6d0019 24%,#b62a17 28%,#b62a17 34%,#6d0019 38%,#b62a17 42%,#b62a17 48%,#6d0019 52%,#b62a17 56%,#b62a17 62%,#6d0019 66%,#b62a17 70%,#b62a17 76%,#6d0019 80%,#b62a17 84%,#b62a17 90%,#6d0019 94%,#b62a17 98%);
+}
+
+@keyframes desplazamientoizq {
+    from{
+        
+    }
+    to{
+        transform: translateX(-10000px);
+    }
+}
+
+@keyframes desplazamientoder {
+    from{
+
+    }
+    to{
+        transform: translateX(10000px);
+    }
+}
